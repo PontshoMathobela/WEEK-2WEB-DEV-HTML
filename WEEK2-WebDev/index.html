@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="HTML 5 contents">
+        <meta name="viewport" content= "width=device-width, initial-scale= 1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table, th, td {
+                border: 1px solid black;
+                text-align: center;
+                padding: 8px;
+            }
+            audio, video {
+                margin: 20px 0;
+                display: block;
+            }
+        </style>
+     </head>
+     <body>
+            <h1>HTML5 ADVANCED</h1>
+            
+              <!--Ordered List-->
+            <h2>Features of HTML5</h2>
+            <ol type="i" start="1">
+                    <li>Lists</li>
+                    <li>Images</li>
+                    <li>Tables</li>
+                    <li>Forms</li>
+                    <li>Multimedia Elements</li>
+            </ol>
+
+            <!--Image -->
+            <h2>HTML IMAGES</h2>
+            <img src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                 alt="Image descipting HTML letters artistically" width="500" height="300">
+            
+            <!--Table-->
+            <h1>HTML Table</h1>
+            <table>
+               <caption>CONTACTS</caption>
+               <thead>
+                   <tr>
+                     <th>Name</th>
+                     <th>Address</th>
+                     <th>Mobile</th>
+                     <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pontsho Mathobela</td>
+                    <td>Bochum 463</td>
+                    <td>0679457789</td>
+                    <td>pontshomathobs@gmail.com</td>
+                </tr>
+                 <tr>
+                    <td>Jordan Male</td>
+                    <td>Cape Town 556</td>
+                    <td>0789967755</td>
+                    <td>jordanmale@gmail.com</td>
+                </tr>
+                 <tr>
+                    <td>Pholo Vivo</td>
+                    <td>Polokwane 432</td>
+                    <td>0834567789</td>
+                    <td>pholovivo@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jade Cable</td>
+                    <td>Johannesburg 667</td>
+                    <td>0798679945</td>
+                    <td>jadecable@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Thabethe Mokoena</td>
+                    <td>Pretoria 543</td>
+                    <td>0734567890</td>
+                    <td>thabethemokoena@gmail.com</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!--Form-->
+            <h2>HTML FORM</h2>
+            <form action= "/submit" method= "post">
+                <fieldset>
+                    <legend>Registration Form</legend>
+                <h2>Registration Form</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required placeholder="Enter your birthdate"><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name = "country" required placeholder = "Select a country">
+                    <option value="">Select a country</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="United States">United States</option>
+                </select><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label><br><br>
+            <input type="checkbox" id="coding" name="hobbies" value="coding">
+            <label for="coding">Coding</label><br><br>
+            <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+            <label for="gaming">Gaming</label><br><br>
+             <input type="submit" value="Register">
+             <input type="reset" value="Clear">
+                </fieldset>
+            </form>
+<!--Multimedia: Audio-->
+<h2>HTML Audio</h2>
+<audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser supports the audio element.
+</audio>
+<!--Multimedia: Video-->
+<h2>HTML Video</h2>
+<video controls width="500">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser supports the video element.
+</video>
+    </body>     
+</html>
